@@ -12,7 +12,6 @@
 <div class="barra">
 	<blockquote><p>Banco De Agricultura</p></blockquote>
 </div>
-<!--agregar nuevo comentario-->
 <!--Formulario-->
 <div class="wrapper">
 <div class="formulario">
