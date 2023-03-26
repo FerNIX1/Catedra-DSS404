@@ -17,18 +17,30 @@
 <div class="wrapper">
 <div class="formulario">
 	<div class="encabezado"><h2>Registrarse</h2><hr></div>
-	<form>	
+
+	<form action="registro1.php" method="post">	
 	  <label for="usuario">Usuario:</label>
 	  <input type="text" id="usuario"  name="usuario" required><br><br>
+
 	  <label for="contra">Contraseña:</label>
-	  <input type="text" id="contra"  name="contra" required><br><br>
+	  <input type="password" id="contra"  name="contra" required><br><br>
+
+	  <label for="contra">Fecha de nacimiennto:</label>
+	  <input type="date" id="contra"  name="fecnac" required><br><br>
+
 	  <label for="correos">Correo:</label>
-	  <input type="mail" id="correo"  name="correo" required><br><br>
+	  <input type="mail" id="correo"  name="correo" placeholder="nombre@gmail.com"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required><br><br>
+
 	  <label for="dui">DUI:</label>		
-	  <input type="text" pattern="\d{8}-\d" id="dui"  name="dui" required><br><hr>
+	  <input type="text" pattern="\d{8}-\d" id="dui"  name="dui" placeholder="12345678-9" required><br><hr>
+
 	  <input type="submit" value="Registrar">
 	</form> 
 	</div>
 	</div>
+
+	
+	 
+</form>
 </body>
 </html>
