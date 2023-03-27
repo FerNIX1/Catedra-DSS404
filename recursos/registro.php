@@ -12,7 +12,7 @@
 <div class="barra">
 	<blockquote><p>Banco De Agricultura</p></blockquote>
 </div>
-
+<!--	Nuestro proyecto-->
 <!--Formulario-->
 <div class="wrapper">
 <div class="formulario">
