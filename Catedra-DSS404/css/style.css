@@ -1,0 +1,103 @@
+*{
+	font-family: Cambria;
+}
+body{
+	background: #eee !important;	
+}
+.wrapper {	/*aregla un poco el espaciado dentro del form*/
+	margin-top: 80px;
+  margin-bottom: 80px;	
+}
+
+/*Codigo para la barra de index*/
+.barra{
+	background:#294e8a;
+	width: 101%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+.barra p{
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+}
+/*Fin codigo de barra para index*/
+
+/*Formularios*/
+.formulario{
+	background: white;
+	padding: 20px;
+	border-radius: 25px;
+	border: solid black;
+	margin-top: 120px;
+	margin-left:350px;
+	margin-right: 380px;
+	
+  border: 1px solid rgba(0,0,0,0.1); 
+}
+.formulario p{
+	font-size: 20px;
+}
+hr{
+	background: gray;
+}
+.formulario form{
+	margin:25px 5px;
+	font-size: 18px;
+}
+.formulario form input[type="text"]{
+	width: 70%;
+	margin-left:58px;
+}
+
+/*Usamos nth-child para posicionar los input de manera correcta*/
+.formulario form input:nth-child(2){
+	margin-left: 30px;
+	
+}
+.formulario form input:nth-child(6){
+	margin-left: 3px;
+}
+.formulario form input[type="submit"]{
+	margin-left: 38%;
+	margin-top: 5px;
+	background:#2d405e;
+	color: #fff;
+	border: 1px solid #eee;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+	border-radius: 8px;
+	padding: 8px 25px;
+}
+.formulario form input[type="submit"]:hover{
+	background:#596e91;
+	color: #fff;
+	border: 1px solid #eee;
+	border-color: #eee;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+	cursor:pointer;
+	box-shadow: #c0e4f0 10px 1px 25px;
+}
+.formulario form a{
+	margin-left: 12px;
+	text-decoration: underline;
+}
+#btncrear{
+	position: relative;
+	right: 10px;
+}
+/**/
+
+/*formulario de registrarse*/
+/*Vamos a posicionar los demas nth-child que nos hacen falta*/
+.formulario form input[type="mail"]{
+	margin-left: 38px;
+}
+
+/*Formulario de olvido contraseña*/
+.formulario form .buscarContra{
+}

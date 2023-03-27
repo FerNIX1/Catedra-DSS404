@@ -1,0 +1,116 @@
+/*Codigo para la barra de menu*/
+*{
+	font-family: cambria;
+}
+body{
+	background: #eee !important;	
+}
+.barra{
+	background:#294e8a;
+	width: 101%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+.barra p{
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+}
+
+.diseñoMenu{
+	margin: 100px 250px;
+	padding: 20px;
+	display: block;
+	border: solid black 2px;
+	border-radius: 10px;
+	border-color: #342d80;
+	box-shadow:#575475 1px 2px 25px 10px;
+}
+.diseñoMenu hr{
+	background: gray;
+}
+.diseñoMenu p{
+	font-size: 20px;
+}
+.row .col:nth-child(1){
+	margin-left: 50px;
+}
+/*Opcion de crear cuenta*/
+.col button{
+	background: #474654;
+	color: white;
+	padding: 20px 50px;
+	border-radius: 25px;
+	cursor: pointer;
+	border-color: #aea6ff;
+}
+.col button:hover{
+	background: black;
+	color: white;
+	padding: 20px 50px;
+	border-radius: 25px;
+	box-shadow:#575475 1px 2px 25px 10px;
+	cursor: pointer;
+}
+/*Opcion de su saldo es:*/
+.col button:nth-child(4){
+	background: #474654;
+	color: white;
+	padding: 20px 54px;
+	border-radius: 25px;
+	margin-bottom: 5px;
+}
+.col button:nth-child(6){
+	background: #474654;
+	color: white;
+	padding: 20px 70px;
+	border-radius: 25px;
+}
+/*Opcion de salir*/
+.col button:nth-child(9){
+	background: #474654;
+	color: white;
+	padding: 20px 78px;
+	border-radius: 25px;
+}
+.col button:nth-child(9):hover{
+	background: black;
+	color: white;
+	padding: 20px 78px;
+	border-radius: 25px;
+	box-shadow:#575475 1px 2px 25px 10px;
+}
+
+/*rightside hace refencia al lado derecho de la tabla*/
+.col .rightside{
+
+}
+.rightside button{
+	background: #474654;
+	color: white;
+	padding: 2px 20px;
+	border-radius: 25px;
+	cursor: pointer;
+	border-color: #aea6ff;	
+}
+.rightside button:hover{
+	background: #474654;
+	color: white;
+	padding: 2px 20px;
+	border-radius: 25px;
+	border-color: #aea6ff;	
+}
+.rightside table{
+	border: solid black 1px;
+	border-radius:10px;
+}
+table tr{
+	font-size: 20px;
+	padding: 10px;
+}
+th{
+	padding: 10px 60px;
+}
