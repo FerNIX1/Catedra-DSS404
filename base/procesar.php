@@ -1,5 +1,6 @@
 <?php
 function validar(){
+    // aqui inicia la funcion
     // Paso 1: Conectar a la base de datos
     $usuario=$_POST['usuario'];
     $contra=$_POST['contra'];
