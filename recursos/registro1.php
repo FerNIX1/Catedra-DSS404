@@ -1,6 +1,7 @@
 <?php 
 
-
+// viendo el problema de diferentes roles voy a probar una variable de control en la 
+// base de datos
 
 include("conexion.php");
 $dui = trim($_POST['dui']);
