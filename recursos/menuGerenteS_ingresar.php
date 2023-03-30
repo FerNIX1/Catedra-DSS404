@@ -7,7 +7,7 @@
     <title>Menu Gerente Sucursal</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style3.css">
 </head>
 <body>
 
@@ -15,8 +15,8 @@
 <div id="barra">
 		<a class="waves-effect waves-light btn">Banco de agricultura</a>
 	</div>
-    <br>
-    <div class="container">
+    <h1>Registro de empleados</h1>
+    <div class="container-fluid">
   		<div class="row">
     		<div class="col">
             <form method="post" action="">
@@ -24,7 +24,7 @@
         <input type="text" id="usuario" name="usuario" required>
 
         <label for="contraseña">Contraseña:</label>
-        <input type="password" id="contraseña" name="contraseña" required>
+        <input type="password" id="contraseña" name="contraseña" required><br>
 
         <label for="cargo">Cargo:</label>
         <select id="cargo" name="cargo" required>
@@ -33,7 +33,7 @@
             <option value="Personal de limpieza">Personal de limpieza</option>
             <option value="Secretaria">Secretaria</option>
             <option value="Asesor financiero">Asesor financiero</option>
-        </select>
+        </select><br>
 
         <label for="correo">Correo electrónico:</label>
         <input type="email" id="correo" name="correo" required>
@@ -53,7 +53,7 @@
                 <!--Fin Aqui iria la tabla de solicitudes de prestamos-->
   			</div>
 		</div>
-<br><br><br><br><br><br>
 </body>
 </html>
 
+<!--Vista n2 gerente sucursal-->
