@@ -21,7 +21,10 @@ $finconsulta = mysqli_query($conexion,$query);
             echo "<p>Dui".$dui."<br>Ususario ".$usuario."<br>Correo".$correo."<br>Fecha de Nacimeinto".$fecNac."<br>Contraseña".$contra."</p>";
             header('Location: ../index.php');
             exit;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         }else{
             echo "<p>Conexion fallida</p>". mysqli_error($conexion); 
         }
