@@ -13,6 +13,7 @@ if (isset($_POST['dui']) || isset($_POST['usuario']) || isset($_POST['correo']) 
     $correo = trim($_POST['correo']);
     $fecNac =trim($_POST['fecnac']) ;
     $contra =trim($_POST['contra']);
+    
     $contra_encriptada = password_hash($contra, PASSWORD_DEFAULT); //encripta la base de datos
     if (filter_var($correo, FILTER_VALIDATE_EMAIL) || preg_match('/^[0-9]{8}-[0-9]{1}$/', $dui)) {
         
