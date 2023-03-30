@@ -30,7 +30,7 @@
       			<button> Crear Cuenta</button><br><br>
       			<button> Su saldo es: </button><br>
       			<button> $00.00</button><br><br>
-      			<button> Salir</button><br>
+      			<button onclick="location.href='cerrar.php'">Salir</button>
     			</div>
     			<div class="col">
     			<div class="rightside">	
