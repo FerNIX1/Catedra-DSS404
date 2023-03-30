@@ -8,6 +8,16 @@
 	<link rel="stylesheet" type="text/css" href="../css/styleMenu.css">
 </head>
 <body>
+<?php
+	session_start();
+	if(!isset($_SESSION['tipocuenta'])){
+		header('Location:../index.php');
+	}else{
+		if($_SESSION['tipocuenta']!=1){
+			header('Location:../index.php');
+		}
+	}
+	?>
 	<div class="barra">
 		<blockquote><p>Banco De Agricultura</p></blockquote>
 	</div>
