@@ -17,7 +17,7 @@
 <div class="wrapper">
 <div class="formulario">
 	<div class="encabezado"><h2>Registrarse</h2><hr></div>
-	<form>	
+	<form action="registro1.php" method="post">	
 	  <label for="usuario">Usuario:</label>
 	  <input type="text" id="usuario"  name="usuario" required><br><br>
 	  <label for="contra">Contraseña:</label>
