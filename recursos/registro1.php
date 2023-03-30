@@ -14,11 +14,12 @@ include("conexion.php");
             $usuario = trim($_POST['usuario']);
             $correo = trim($_POST['correo']);
             $fecNac =trim($_POST['fecnac']) ;
+            // y validar la fecha
             $contra =trim($_POST['contra']);
             $contra_encriptada = password_hash($contra, PASSWORD_DEFAULT); //encripta la base de datos
     
             if (preg_match('/^[0-9]{8}-[0-9]{1}$/', $dui) || filter_var($correo, FILTER_VALIDATE_EMAIL)) {
-                    $query ="INSERT INTO `usuario`(`DUI_Usuario`, `Nombre_Usuario`, `Correo_Electronico`, `FechaNacimiento` , `Pass`) VALUES ('$dui','$usuario','$correo','$fecNac','$contra_encriptada')";
+                    $query ="INSERT INTO `usuario`(`DUI_Usuario`, `Nombre_Usuario`, `Correo_Electronico`, `FechaNacimiento` , `Pass` , `ID_cuenta`) VALUES ('$dui','$usuario','$correo','$fecNac','$contra_encriptada',1)";
 
                     $finconsulta = mysqli_query($conexion,$query);
 

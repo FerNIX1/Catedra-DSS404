@@ -27,7 +27,7 @@
 
 	  <input type="submit" value="Ingresar" />
       <div class="forgot-password">
-        <a href="#">¿Olvidaste tu contraseña?</a> | <a href="#">Crear usuario</a>
+        <a href="#">¿Olvidaste tu contraseña?</a> | <a href="recursos/registro.php">Crear usuario</a>
       </div>
     </form>
     <br><br><br><br>
