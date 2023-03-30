@@ -10,7 +10,7 @@
 <body>
 <!--Barra -->
 <div class="barra">
-	<blockquote><p>Banco De Agricultura</p></blockquote>
+	<blockquote><h1>Banco De Agricultura</h1></blockquote>
 </div>
 <!--Formulario-->
 <div class="wrapper">
