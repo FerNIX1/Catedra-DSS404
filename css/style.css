@@ -1,103 +1,144 @@
 *{
-	font-family: Cambria;
+	font-family: Roboto;
 }
-body{
-	background: #eee !important;	
-}
-.wrapper {	/*aregla un poco el espaciado dentro del form*/
-	margin-top: 80px;
-  margin-bottom: 80px;	
-}
-
-/*Codigo para la barra de index*/
-.barra{
-	background:#294e8a;
-	width: 101%;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-}
-.barra p{
-	margin-top: 10px;
-	margin-left: 10px;
-	font-size: 22px;
-	font-weight: bold;
-	color: white;
-}
-/*Fin codigo de barra para index*/
-
-/*Formularios*/
-.formulario{
-	background: white;
-	padding: 20px;
-	border-radius: 25px;
-	border: solid black;
-	margin-top: 120px;
-	margin-left:350px;
-	margin-right: 380px;
-	
-  border: 1px solid rgba(0,0,0,0.1); 
-}
-.formulario p{
+/*Barra de inicio*/
+#barra a{
 	font-size: 20px;
+	text-align: left;
+	width:100%;
+	height: 50px;
+  color:white;
+	background: #021d34;
+	padding: 7px 0 0 25px;
 }
-hr{
-	background: gray;
-}
-.formulario form{
-	margin:25px 5px;
-	font-size: 18px;
-}
-.formulario form input[type="text"]{
-	width: 70%;
-	margin-left:58px;
-}
+/*FinBarra de inicio*/
 
-/*Usamos nth-child para posicionar los input de manera correcta*/
-.formulario form input:nth-child(2){
-	margin-left: 30px;
-	
-}
-.formulario form input:nth-child(6){
-	margin-left: 3px;
-}
-.formulario form input[type="submit"]{
-	margin-left: 38%;
-	margin-top: 5px;
-	background:#2d405e;
-	color: #fff;
-	border: 1px solid #eee;
-	box-shadow: 5px 5px 5px #eee;
-	text-shadow: none;
-	border-radius: 8px;
-	padding: 8px 25px;
-}
-.formulario form input[type="submit"]:hover{
-	background:#596e91;
-	color: #fff;
-	border: 1px solid #eee;
-	border-color: #eee;
-	box-shadow: 5px 5px 5px #eee;
-	text-shadow: none;
-	cursor:pointer;
-	box-shadow: #c0e4f0 10px 1px 25px;
-}
-.formulario form a{
-	margin-left: 12px;
-	text-decoration: underline;
-}
-#btncrear{
-	position: relative;
-	right: 10px;
-}
-/**/
+body {
+      background-image: linear-gradient(to bottom right,#284263, #bfbfbf);
+      background-repeat: no-repeat;
+        background-size: cover;
+      }
 
-/*formulario de registrarse*/
-/*Vamos a posicionar los demas nth-child que nos hacen falta*/
-.formulario form input[type="mail"]{
-	margin-left: 38px;
-}
+      h1 {
+        text-align: center;
+        color: #333333;
+      }
 
-/*Formulario de olvido contraseña*/
-.formulario form .buscarContra{
+      form {
+        background-color: #ffffff;
+        border: 1px solid #e6e6e6;
+        border-radius: 8px;
+        width: 55%;
+        margin: 0 auto;
+        padding: 45px;
+        box-shadow: 15px 25px 45px  #35444f;
+      }
+
+      label {
+        display: block;
+        font-size: 20px;
+        color: #222222;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      input[type="submit"] {
+        background-color: #336699;
+        color: #ffffff;
+        font-size: 17px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #2a5298;
+      }
+
+      .forgot-password {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .forgot-password a {
+        color: #336699;
+        font-size: 17px;
+        margin-right: 10px;
+      }
+      .forgot-password a:nth-child(2){
+        margin-left: 20px;
+      }
+
+ .borde{
+  margin: 0;
+ }
+ .borde .adentroborde{
+  background: #bfbfbf;
+  border: solid black 1px;
+  border-radius:10px;
+  margin: 60px 15% 0px 15%;
+ }
+
+ .adentroborde h2{
+  font-size: 23px;
+  margin-left: 10px;
+ }
+
+ /*Parte de los grid de menu gerente sucursal*/
+ 
+ .col button{
+	background: #474654;
+	color: white;
+	padding: 25px 50px;
+	border-radius: 25px;
+	cursor: pointer;
+	border-color: #aea6ff;
 }
+.col button:hover{
+	background: black;
+	color: white;
+	padding: 25px 50px;
+	border-radius: 25px;
+	box-shadow:#575475 1px 2px 25px 10px;
+	cursor: pointer;
+}
+.col button:nth-child(4){
+	background: #474654;  
+	color: white;
+	padding: 20px 54px;
+	border-radius: 25px;
+	margin-bottom: 25px;
+}
+.col button:nth-child(4):hover{
+	background: black;
+	color: white;
+	padding: 20px 54px;
+	border-radius: 25px;
+	margin-bottom: 25px;
+}
+.col button:nth-child(6){
+	background: #474654;
+	color: white;
+	padding: 20px 125px;
+	border-radius: 25px;
+}
+.col button:nth-child(6):hover{
+	background: black;
+	color: white;
+	padding: 20px 125px;
+	border-radius: 25px;
+}
+ /*Parte de los grid de menu gerente sucursal*/
+
+
+ /*Forms de registro en gerente sucursal*/

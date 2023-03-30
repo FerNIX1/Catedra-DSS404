@@ -1,0 +1,88 @@
+    *{
+        font-family: Roboto;
+    }
+    /*Barra de inicio*/
+    #barra a{
+        font-size: 20px;
+        text-align: left;
+        width:100%;
+        height: 50px;
+        color:white;
+        background: #021d34;
+        padding: 7px 0 0 25px;
+    }
+    /*FinBarra de inicio*/
+
+    body {
+        background-image: linear-gradient(to bottom right,#284263, #bfbfbf);
+        background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /*menu gerente sucursal ingresar*/
+        h1{
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: underline;
+            text-align: center;
+            box-shadow: 0px 1px 5px 1px rgb(130, 130, 130);
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,5);
+        }
+        
+        fieldset {
+            border: none;
+            margin-bottom: 20px;
+        }
+        
+        legend {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: none;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        input[type="submit"] {
+            background-color: #021d34;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #18447c;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            form {
+                padding: 10px;
+            }
+        }
+        /*fin para menu gerente sucursal*/
