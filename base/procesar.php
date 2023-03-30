@@ -19,10 +19,24 @@ function validar(){
             $stmt->execute();
     
             $datos_usuario = $stmt->fetch(PDO::FETCH_ASSOC);//se guarda en un array el resultado de la consulta
-            $hash = password_hash($contra, PASSWORD_DEFAULT); // para el uso de password_verify se convierte a hash la contrase;a
+            //echo print_r($datos_usuario);
+            $hash = password_hash($contra, PASSWORD_DEFAULT);
     
             if ($datos_usuario && password_verify($_POST['contra'],$hash)) {
-                header('Location: recursos/menuCliente.php');
+
+                session_start();
+                
+                $_SESSION['tipocuenta']=$datos_usuario['ID_cuenta'];
+                 switch($_SESSION['tipocuenta']){
+                      case 1:
+                        $_SESSION['tipocuenta']=$datos_usuario['ID_cuenta'];
+                        $tipo_cuenta=$_SESSION['tipocuenta'];
+                        header('Location: recursos/menuCliente.php');
+                        break;
+                        case 2:
+                        header('Location: recursos/gerentesucursal.php');
+                        break;
+                 }
                 exit;
             } else {
                 echo "Usuario o contraseña inválida";
