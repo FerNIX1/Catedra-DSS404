@@ -14,17 +14,30 @@ function validar(){
         // establecer el modo de error PDO a excepción
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $consulta = "SELECT * FROM usuario WHERE Nombre_Usuario=:usuario and pass=:contra";
+        $consulta = "SELECT * FROM usuario WHERE Nombre_Usuario=:usuario";
         $stmt = $conn->prepare($consulta);
         $stmt->bindParam(':usuario', $usuario);
-        $stmt->bindParam(':contra', $contra);
         $stmt->execute();
 
-        $filas = $stmt->rowCount(); // me da un resultado si coincide de vuelve 1 si hay o 0 si no
+        $datos_usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+         //echo print_r($datos_usuario);
+        $hash = password_hash($contra, PASSWORD_DEFAULT);
 
-        if ($filas > 0) {
+        if ($datos_usuario && password_verify($_POST['contra'],$hash)) {
+
+            session_start();
             
-            header('Location: recursos/menuCliente.php');
+            $_SESSION['tipocuenta']=$datos_usuario['ID_cuenta'];
+             switch($_SESSION['tipocuenta']){
+                  case 1:
+                    $_SESSION['tipocuenta']=$datos_usuario['ID_cuenta'];
+                    $tipo_cuenta=$_SESSION['tipocuenta'];
+                    header('Location: recursos/menuCliente.php');
+                    break;
+                    case 2:
+                    header('Location: recursos/gerentesucursal.php');
+                    break;
+             }
             exit;
         } else {
             echo "Usuario o contraseña inválida";
@@ -36,6 +49,6 @@ function validar(){
 }
 
 if (isset($_POST['enviar'])) {
-    validar();
+validar();
 }
 ?>
