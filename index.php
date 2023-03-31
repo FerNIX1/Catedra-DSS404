@@ -25,9 +25,9 @@
 		include("base/procesar.php");
 	  ?>
 
-	  <input type="submit" value="Ingresar" />
+	  <input type="submit" name="enviar" value="Ingresar" />
       <div class="forgot-password">
-        <a href="#">¿Olvidaste tu contraseña?</a> | <a href="#">Crear usuario</a>
+        <a href="recursos/olvidoContra.php">¿Olvidaste tu contraseña?</a> | <a href="recursos/registro.php">Crear usuario</a>
       </div>
     </form>
     <br><br><br><br>
