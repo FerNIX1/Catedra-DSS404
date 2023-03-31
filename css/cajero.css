@@ -1,0 +1,122 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	background-image: linear-gradient(to bottom right,#284263, #bfbfbf);
+	background-repeat: no-repeat;
+		background-size: cover;
+	}
+/*Barra de inicio*/
+    #barra a{
+        font-size: 20px;
+        text-align: left;
+        width:100%;
+        height: 50px;
+        color:white;
+        background: #14426b;
+        padding: 7px 0 0 25px;
+    }
+
+
+.diseñoMenu{
+	margin: 40px 250px;
+	padding: 20px;
+	display: block;
+	border: solid black 2px;
+	border-radius: 10px;
+	border-color: #8f8dab;
+	box-shadow:#575475 1px 2px 25px 10px;
+	background:#c4d5e3;
+}
+.diseñoMenu hr{
+	background: gray;
+}
+.diseñoMenu p{
+	font-size: 20px;
+}
+.row .col:nth-child(1){
+	margin-left: 50px;
+}
+/*Opcion de crear cuenta*/
+.col button{
+	background: #474654;
+	color: white;
+	padding: 25px 70px;
+	border-radius: 25px;
+	cursor: pointer;
+	border-color: #aea6ff;
+}
+.col button:hover{
+	background: black;
+	color: white;
+	padding: 25px 70px;
+	border-radius: 25px;
+	box-shadow:#575475 1px 2px 25px 10px;
+	cursor: pointer;
+}
+/*Opcion de ingresar dinero a una cuenta:*/
+.col button:nth-child(4){
+	background: #474654;
+	color: white;
+	padding: 25px 28px;
+	border-radius: 25px;
+	margin-bottom: 5px;
+}
+.col button:nth-child(4):hover{
+	background: black;
+	color: white;
+	padding: 25px 28px;
+	border-radius: 25px;
+	margin-bottom: 5px;
+}
+/*retirar dinero de una cuenta*/
+.col button:nth-child(7){
+	background: #474654;
+	color: white;
+	padding: 25px 30px;
+	border-radius: 25px;
+}
+.col button:nth-child(7):hover{
+	background: black;
+	color: white;
+	padding: 25px 30px;
+	border-radius: 25px;
+}
+/*Realizar un prestamo*/
+.col button:nth-child(10){
+	background: #474654;
+	color: white;
+	padding: 25px 54px;
+	border-radius: 25px;
+}
+.col button:nth-child(10):hover{
+	background: black;
+	color: white;
+	padding: 25px 54px;
+	border-radius: 25px;
+	box-shadow:#575475 1px 2px 25px 10px;
+}
+/*Salir*/
+.col button:nth-child(13){
+	background: #474654;
+	color: white;
+	padding: 20px 110px;
+	border-radius: 25px;
+}
+.col button:nth-child(13):hover{
+	background: black;
+	color: white;
+	padding: 20px 110px;
+	border-radius: 25px;
+}
+.rightside table{
+	border: solid black 1px;
+	border-radius:10px;
+}
+table tr{
+	font-size: 20px;
+	padding: 10px;
+}
+th{
+	padding: 10px 60px;
+}

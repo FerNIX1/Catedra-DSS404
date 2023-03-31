@@ -1,33 +1,32 @@
-/*Codigo para la barra de menu*/
 *{
-	font-family: cambria;
+	font-family: Arial, Helvetica, sans-serif;
 }
-body{
-	background: #eee !important;	
-}
-.barra{
-	background:#294e8a;
-	width: 101%;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-}
-.barra p{
-	margin-top: 10px;
-	margin-left: 10px;
-	font-size: 22px;
-	font-weight: bold;
-	color: white;
-}
+body {
+	background-image: linear-gradient(to bottom right,#284263, #bfbfbf);
+	background-repeat: no-repeat;
+		background-size: cover;
+	}
+/*Barra de inicio*/
+    #barra a{
+        font-size: 20px;
+        text-align: left;
+        width:100%;
+        height: 50px;
+        color:white;
+        background: #14426b;
+        padding: 7px 0 0 25px;
+    }
+
 
 .diseñoMenu{
-	margin: 100px 250px;
+	margin: 40px 250px;
 	padding: 20px;
 	display: block;
 	border: solid black 2px;
 	border-radius: 10px;
-	border-color: #342d80;
+	border-color: #8f8dab;
 	box-shadow:#575475 1px 2px 25px 10px;
+	background:#c4d5e3;
 }
 .diseñoMenu hr{
 	background: gray;
@@ -42,7 +41,7 @@ body{
 .col button{
 	background: #474654;
 	color: white;
-	padding: 20px 50px;
+	padding: 30px 50px;
 	border-radius: 25px;
 	cursor: pointer;
 	border-color: #aea6ff;
@@ -50,7 +49,7 @@ body{
 .col button:hover{
 	background: black;
 	color: white;
-	padding: 20px 50px;
+	padding: 30px 50px;
 	border-radius: 25px;
 	box-shadow:#575475 1px 2px 25px 10px;
 	cursor: pointer;
@@ -59,14 +58,14 @@ body{
 .col button:nth-child(4){
 	background: #474654;
 	color: white;
-	padding: 20px 54px;
+	padding: 30px 54px;
 	border-radius: 25px;
 	margin-bottom: 5px;
 }
 .col button:nth-child(6){
 	background: #474654;
 	color: white;
-	padding: 20px 70px;
+	padding: 30px 70px;
 	border-radius: 25px;
 }
 /*Opcion de salir*/

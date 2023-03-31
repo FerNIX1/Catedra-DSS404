@@ -1,6 +1,6 @@
-    *{
-        font-family: Roboto;
-    }
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
     /*Barra de inicio*/
     #barra a{
         font-size: 20px;
