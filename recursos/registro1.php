@@ -4,8 +4,9 @@
 // base de datos
 include("conexion.php");
 
+//Capturando las variables globales
         if (isset($_POST['dui']) || isset($_POST['usuario']) || isset($_POST['correo']) || isset($_POST['fecnac']) || isset($_POST['contra'])) {
-
+            //Borrando espacios innecesarios
             $dui = trim($_POST['dui']);
             $usuario = trim($_POST['usuario']);
             $correo = trim($_POST['correo']);
@@ -13,6 +14,16 @@ include("conexion.php");
             // y validar la fecha
             $contra =trim($_POST['contra']);
             $contra_encriptada = password_hash($contra, PASSWORD_DEFAULT); //encripta la base de datos
+
+
+            //Validacion
+            if(isset($_POST['submit'])){
+                if(empty('dui')){
+                    echo "<p class='error'>Debes ingresar el nombre</p>";
+                }
+            }
+
+
     
             if (preg_match('/^[0-9]{8}-[0-9]{1}$/', $dui) || filter_var($correo, FILTER_VALIDATE_EMAIL)) {
                     $query ="INSERT INTO `usuario`(`DUI_Usuario`, `Nombre_Usuario`, `Correo_Electronico`, `FechaNacimiento` , `Pass` , `ID_cuenta`) VALUES ('$dui','$usuario','$correo','$fecNac','$contra_encriptada',1)";
@@ -30,7 +41,7 @@ include("conexion.php");
                         echo "<p>Conexion fallida</p>"; 
                     }
             }else{
-                // error falta
+                
             } 
     }else{
              // error falta hacer el error al poner el mismo dui que esta en la base de datos
