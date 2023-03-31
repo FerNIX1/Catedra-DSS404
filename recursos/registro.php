@@ -31,7 +31,7 @@
 	  <label for="dui">DUI:</label>		
 	  <input type="text" pattern="\d{8}-\d" id="dui"  name="dui" placeholder="12345678-9" required><br><hr>
 
-	  <input type="submit" value="Registrar">
+	  <input type="submit" value="Registrar" name='submit'>
 	</form> 
 </form>
 </body>
