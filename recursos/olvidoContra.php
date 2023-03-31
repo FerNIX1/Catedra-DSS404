@@ -17,13 +17,17 @@
 <div class="wrapper">
 <div class="formulario">
 	<div class="encabezado"><h2>Recuperar contraseña</h2><hr></div>
-	<form>
+	<form method="post">
 	   <p>Para recuperar sus credenciales ingrese el correo y el DUI con el cual fue registrado.</p>	
-	  <label for="correos">Correo:</label>
-	  <input type="mail" id="correo"  name="correo" required><br><br>
-	  <label for="dui">DUI:</label>		
-	  <input type="text" pattern="\d{8}-\d" id="dui"  name="dui" required><br><hr>
-	  <div class="buscarContra"><input type="submit" name="enviar" value="Buscar"></div>
+	  <label for="correos">dui:</label>
+	  <input type="text" id="correo"  name="dui"><br><br>
+	  <label for="dui">Nueva contraseña</label>		
+	  <input type="text" id="nueva"  name="nueva"><br><hr>
+	  <?php
+		include("olvido.php");
+	  ?>
+	  <div class="buscarContra"><input type="submit" name="enviar" value="Cambiar"></div>
+	  <a href="../index.php">regresar</a>
 	</form> 
 	</div>
 	</div>
