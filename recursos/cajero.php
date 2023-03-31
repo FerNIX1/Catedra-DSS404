@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/cajero.css">
 </head>
 <body>
-	<?php/*
+	<?php
 	session_start();
 	if(!isset($_SESSION['tipocuenta'])){
 		header('Location:../index.php');
@@ -17,7 +17,7 @@
 		if($_SESSION['tipocuenta']!=1){
 			header('Location:../index.php');
 		}
-	}*/
+	}
 	?>
 	
 	<div id="barra">
@@ -58,3 +58,5 @@
 
 </body>
 </html>
+
+<!--vista cajero-->
