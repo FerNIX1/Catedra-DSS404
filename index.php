@@ -24,6 +24,7 @@
 	  <?php
 		include("base/procesar.php");
 	  ?>
+<!--Para ir a recupear tu contraseña-->
 
 	  <input type="submit" name="enviar" value="Ingresar" />
       <div class="forgot-password">

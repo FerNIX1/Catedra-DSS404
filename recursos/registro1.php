@@ -34,7 +34,7 @@ $error=array();
                 $error[] = "El formato de fecha de nacimiento es incorrecto. Debe tener el formato DD-MM-AAAA.";
              }
              
-
+            //Validacion de email y dui
             if (preg_match('/^[0-9]{8}-[0-9]{1}$/', $dui) || filter_var($correo, FILTER_VALIDATE_EMAIL)) {
                     $query ="INSERT INTO `usuario`(`DUI_Usuario`, `Nombre_Usuario`, `Correo_Electronico`, `FechaNacimiento` , `Pass` , `ID_cuenta`) VALUES ('$dui','$usuario','$correo','$fecNac','$contra_encriptada',1)";
 

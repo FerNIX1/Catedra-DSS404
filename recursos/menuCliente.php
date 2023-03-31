@@ -19,7 +19,7 @@
 		}
 	}
 	?>
-	
+	<!--Menu para los clientes-->
 	<div id="barra">
 		<a class="waves-effect waves-light btn ">Banco de agricultura</a>
 	</div>
