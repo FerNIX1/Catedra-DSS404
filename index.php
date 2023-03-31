@@ -11,7 +11,7 @@
 <body>
 <!--Barra -->
 	<div id="barra">
-		<a class="waves-effect waves-light btn">Banco de agricultura</a>
+		<a class="waves-effect waves-light btn ">Banco de agricultura</a>
 	</div>
 	<div class="IniciSec"><h1>Inicio de sesión</h1></div>
 
