@@ -2,10 +2,6 @@
 
 // viendo el problema de diferentes roles voy a probar una variable de control en la 
 // base de datos
-
-
-
-
 include("conexion.php");
 
         if (isset($_POST['dui']) || isset($_POST['usuario']) || isset($_POST['correo']) || isset($_POST['fecnac']) || isset($_POST['contra'])) {
