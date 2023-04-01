@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        table,tr{
-            border: 2px solid black;
-        }
-    </style>
+    <title>Administrador</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
-<body>
-   
-    <form action="" method="post">
-        <h1>Administrador </h1>
-        <h2>Registro de planilla</h2>
+<body>   
+    <form method="post">
+        <h3><i>Administrador</i></h3>
+        <h6>Registro de planilla</h6>
      <label for="usuario">Usuario:</label>
 	  <input type="text" id="usuario"  name="usuario"><br>
 
@@ -28,7 +24,7 @@
 	  </label><br>
 
 	  <label for="correos">Correo:
-	  <input type="mail" id="correo"  name="correo" placeholder="nombre@gmail.com"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required></label><br><br>
+	  <input type="mail" id="correo"  name="correo" placeholder="nombre@gmail.com"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required></label><br>
 
 	  <label for="dui">DUI:</label>		
 	  <input type="text" pattern="\d{8}-\d" id="dui"  name="dui" placeholder="12345678-9"><br>
@@ -37,8 +33,9 @@
             <option value="1">Usuario comun</option>
             <option value="2" selected>Gerente de sucursal</option>
             <option value="3">Administrador</option>
+            <option value="4">Cajero</option>
       </select>
-
+        <br><br>
 	  <input type="submit" value="Registrar" name='submit'>
 
 
@@ -141,13 +138,6 @@
             }else{
                      // error falta hacer el error al poner el mismo dui que esta en la base de datos
             }
-        
-            
-        
-    
-    
-    
-    
     ?>
 </body>
 </html>
