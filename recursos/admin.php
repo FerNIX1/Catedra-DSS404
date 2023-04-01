@@ -40,6 +40,7 @@
 
 
     </form>
+    <br>
     <?php 
         
 
@@ -93,6 +94,7 @@
                                 
                                 if (mysqli_num_rows($resultado) > 0) {
                                   // Mostrar los datos de cada fila
+                                 
                                   echo "<table>";
                                     echo "<tr>";
                                         echo "<th>DUI</th>";
