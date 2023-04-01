@@ -30,7 +30,7 @@
 	<div class="container-fluid">
   		<div class="row">
     		<div class="col">
-      			<button> Crear Cuenta</button><br><br>
+      			<a href="cajeroAgregarUser.php"><button> Crear Cuenta</button></a><br><br>
       			<button> Su saldo es: </button><br><br>
       			<button> $00.00</button><br><br>
       			<button onclick="location.href='cerrar.php'">Salir</button>

@@ -139,6 +139,11 @@ body {
 	border-radius: 25px;
 }
  /*Parte de los grid de menu gerente sucursal*/
-
+table, td, tr{
+  border:solid black 1px;
+}
 
  /*Forms de registro en gerente sucursal*/
+.regresar a{
+  margin-left: 20px;
+}

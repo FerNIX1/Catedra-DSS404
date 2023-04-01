@@ -37,7 +37,17 @@
                 <!--Aqui iria la tabla de solicitudes de prestamos-->
     			<div class="col">
     			<div class="rightside">	
-      			
+				<table>
+      				<tr>
+      					<th>Movimientos</th>
+      				</tr>
+      				<tr><td>.</td></tr>
+      				<tr><td>.</td></tr>
+      				<tr><td></td></tr>
+      				<tr><td></td></tr>
+      				<tr><td></td></tr>
+      				<tr><td></td></tr>
+      			</table>
       			</div>
     			</div>
                 <!--Fin Aqui iria la tabla de solicitudes de prestamos-->
