@@ -11,18 +11,18 @@ function validar(){
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         // establecer el modo de error PDO a excepción
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //lanza una excepción para cada error generado durante la ejecución de una consulta
 
         $consulta = "SELECT * FROM usuario WHERE Nombre_Usuario=:usuario";
             $stmt = $conn->prepare($consulta);
-            $stmt->bindParam(':usuario', $usuario);
-            $stmt->execute();
+            $stmt->bindParam(':usuario', $usuario); //vincular el valor de la variable $usuario
+            $stmt->execute(); //
     
-            $datos_usuario = $stmt->fetch(PDO::FETCH_ASSOC);//se guarda en un array el resultado de la consulta
+            $datos_usuario = $stmt->fetch(PDO::FETCH_ASSOC);//se guarda en un array el resultado de la consulta, donde las columnas son la key 
             //echo print_r($datos_usuario);
             $hash = password_hash($contra, PASSWORD_DEFAULT);
     
-            if ($datos_usuario && password_verify($_POST['contra'],$hash)) {
+           if ($datos_usuario && password_verify($_POST['contra'],$hash)) {
 
                 session_start();
                 
@@ -34,7 +34,7 @@ function validar(){
                         $tipo_cuenta=$_SESSION['tipocuenta'];
                         header('Location: recursos/menuCliente.php');
                         break;
-                        case 2:
+                         case 2:
                         header('Location: recursos/gerentesucursal.php');
                         break;
                         case 3:
