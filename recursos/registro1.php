@@ -45,7 +45,7 @@ $error=array();
         } 
 }else{
 
-    
+
          // error falta hacer el error al poner el mismo dui que esta en la base de datos
 }
 ?>

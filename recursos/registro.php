@@ -20,10 +20,10 @@
 
 	<form action="registro1.php" method="post">	
 	  <label for="usuario">Usuario:</label>
-	  <input type="text" id="usuario"  name="usuario"><br>
+	  <input type="text" id="usuario"  name="usuario" required><br>
 
 	  <label for="contra">Contraseña:</label>
-	  <input type="password" id="contra"  name="contra">
+	  <input type="password" id="contra"  name="contra" required>
 	  <?php if(in_array("La contraseña debe tener al menos 8 caracteres.", $error)) { echo "<p class='error'>La contraseña debe tener al menos 8 caracteres.</p>"; } ?><br>
 
 	  <label for="contra">Fecha de nacimiento:
@@ -35,7 +35,7 @@
 	  <input type="mail" id="correo"  name="correo" placeholder="nombre@gmail.com"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required></label><br><br>
 
 	  <label for="dui">DUI:</label>		
-	  <input type="text"  id="dui"  name="dui" placeholder="12345678-9"><br><hr>
+	  <input type="text"  id="dui" pattern="\d{8}-\d" name="dui" placeholder="12345678-9" required><br><hr>
 
 	  <input type="submit" value="Registrar" name='submit'>
 	</form> 
