@@ -5,7 +5,7 @@
 include("conexion.php");
 $error=array();
 //Capturando las variables globales
-        if (isset($_POST['dui']) || isset($_POST['usuario']) || isset($_POST['correo']) || isset($_POST['fecnac']) || isset($_POST['contra'])) {
+        if (isset($_POST['dui']) && isset($_POST['usuario']) && isset($_POST['correo']) && isset($_POST['fecnac']) && isset($_POST['contra'])) {
             //Borrando espacios innecesarios
             $dui = trim($_POST['dui']);
             $usuario = trim($_POST['usuario']);

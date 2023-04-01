@@ -36,6 +36,9 @@ function validar(){
                         case 2:
                         header('Location: recursos/gerentesucursal.php');
                         break;
+                        case 3:
+                            header('Location: recursos/admin.php');
+                            break;
                  }
                 exit;
             } else {
