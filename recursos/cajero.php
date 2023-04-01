@@ -14,7 +14,7 @@
 	if(!isset($_SESSION['tipocuenta'])){
 		header('Location:../index.php');
 	}else{
-		if($_SESSION['tipocuenta']!=1){
+		if($_SESSION['tipocuenta']!=4){
 			header('Location:../index.php');
 		}
 	}
@@ -30,9 +30,9 @@
 	<div class="container-fluid">
   		<div class="row">
     		<div class="col">
-      			<button> Ingresar Persona</button><br><br>
-      			<button> Ingresar dinero a una cuenta: </button><br><br>
-      			<button> Retirar dinero de una cuenta</button><br><br>
+      			<button onclick="location.href='cajeroAgregarUser.php'"> Ingresar Persona</button><br><br>
+      			<button onclick="location.href='cajeroIngresoDinero.php'"> Ingresar dinero a una cuenta: </button><br><br>
+      			<button onclick="location.href='cajeroRetiroDinero.php'"> Retirar dinero de una cuenta</button><br><br>
                   <button> Realizar un prestamo</button><br><br>
       			<button onclick="location.href='cerrar.php'">Salir</button>
     			</div>
