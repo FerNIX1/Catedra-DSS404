@@ -23,7 +23,7 @@ $error=array();
             //Validacion de contra
              if(empty($_POST['contra'])) {
                 $error[] = "El campo de contraseña es obligatorio.";
-             } elseif(strlen($_POST['contra']) < 8) {
+                } elseif(strlen($_POST['contra']) < 8) {
                 $error[] = "La contraseña debe tener al menos 8 caracteres.";
              }
 
