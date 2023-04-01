@@ -28,6 +28,7 @@
 
 	  <label for="contra">Fecha de nacimiento:
 	  <input type="date" id="contra"  name="fecnac" required> 
+	  <input type="date" id="contra"  name="fecnac" > 
 	  <?php if(in_array("El formato de fecha de nacimiento es incorrecto. Debe tener el formato AAAA-MM-DD.", $error)) { echo "<p class='error'>El formato de fecha de nacimiento es incorrecto. Debe tener el formato DD-MM-AAAA.</p>"; } ?>
 	  </label><br>
 
@@ -35,7 +36,7 @@
 	  <input type="mail" id="correo"  name="correo" placeholder="nombre@gmail.com"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required></label><br><br>
 
 	  <label for="dui">DUI:</label>		
-	  <input type="text" pattern="\d{8}-\d" id="dui"  name="dui" placeholder="12345678-9"><br><hr>
+	  <input type="text"  id="dui"  name="dui" placeholder="12345678-9"><br><hr>
 
 	  <input type="submit" value="Registrar" name='submit'>
 	</form> 
