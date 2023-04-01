@@ -27,7 +27,6 @@
 	  <?php if(in_array("La contraseña debe tener al menos 8 caracteres.", $error)) { echo "<p class='error'>La contraseña debe tener al menos 8 caracteres.</p>"; } ?><br>
 
 	  <label for="contra">Fecha de nacimiento:
-	  <input type="date" id="contra"  name="fecnac" required> 
 	  <input type="date" id="contra"  name="fecnac" > 
 	  <?php if(in_array("El formato de fecha de nacimiento es incorrecto. Debe tener el formato AAAA-MM-DD.", $error)) { echo "<p class='error'>El formato de fecha de nacimiento es incorrecto. Debe tener el formato DD-MM-AAAA.</p>"; } ?>
 	  </label><br>
