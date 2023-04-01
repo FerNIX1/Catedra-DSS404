@@ -27,6 +27,7 @@ function validar(){
                 session_start();
                 
                 $_SESSION['tipocuenta']=$datos_usuario['ID_cuenta'];
+                echo $datos_usuario['ID_cuenta'];
                  switch($_SESSION['tipocuenta']){
                       case 1:
                         $_SESSION['tipocuenta']=$datos_usuario['ID_cuenta'];
@@ -38,6 +39,9 @@ function validar(){
                         break;
                         case 3:
                             header('Location: recursos/admin.php');
+                            break;
+                        case 4:
+                            header('Location: recursos/cajero.php');
                             break;
                  }
                 exit;
