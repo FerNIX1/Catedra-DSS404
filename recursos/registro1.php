@@ -3,7 +3,7 @@
 // viendo el problema de diferentes roles voy a probar una variable de control en la 
 // base de datos
 include("conexion.php");
-$error=array();
+$errores=[];
 //Capturando las variables globales y validando que existan o el campo tenga una variable
         if (isset($_POST['dui']) || isset($_POST['usuario']) || isset($_POST['correo']) || isset($_POST['fecnac']) || isset($_POST['contra'])) {
             //Borrando espacios innecesarios
@@ -13,6 +13,9 @@ $error=array();
             $fecNac =trim($_POST['fecnac']) ;
             $contra =trim($_POST['contra']);
             $contra_encriptada = password_hash($contra, PASSWORD_DEFAULT); //encripta la base de datos
+
+
+
 
 
             //Validacion de usuario
@@ -45,6 +48,24 @@ $error=array();
         } 
 }else{
 
+//Funciones para validar de la 
+    function obligatorio(string $texto) : bool{
+        return !(trim($texto) == '');
+    }
+
+    function validar_email(strin $texto) : bool{
+        return (filter_var($texto, FILTER_VALIDATE_EMAIL == false)? false : true);
+    }
+
+    if(!obligatorio($usuario)){
+        $errores[] = 'Tu nombre es obligatorio agregarlo.';
+    }
+
+    if(!validar_email($email)){
+        $errores[] = 'Tu correo electronico es obligatorio agregarlo.';
+    }
+
+    
 
          // error falta hacer el error al poner el mismo dui que esta en la base de datos
 }
