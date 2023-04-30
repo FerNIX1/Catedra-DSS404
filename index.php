@@ -13,8 +13,7 @@
 	<div id="barra">
 		<a class="waves-effect waves-light btn ">Banco de agricultura</a>
 	</div>
-	<div class="IniciSec"><h1>Inicio de sesión</h1></div>
-
+	<br><br><br>
 <!--Formulario-->
 	<form method="post" action="">	
 	<label for="usuario">Usuario</label>

@@ -16,9 +16,10 @@
 	<div id="barra">
 		<a class="waves-effect waves-light btn ">Banco de agricultura</a>
 	</div>
-	<div class="IniciSec"><h1>Registrar</h1></div>
+	<br><br>
+	<form action="registro1.php" method="post">
+	  <h3><u>REGISTRAR</u></h3>
 
-	<form action="registro1.php" method="post">	
 	  <label for="usuario">Usuario:</label>
 	  <input type="text" id="usuario"  name="usuario" required><br>
 
@@ -39,7 +40,7 @@
 
 	  <input type="submit" value="Registrar" name='submit'>
 	</form> 
-
+<br>
 	
 </form>
 </body>
