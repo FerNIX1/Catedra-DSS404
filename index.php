@@ -7,6 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		body{
+			background-image: url(img/1.jpeg);
+			background-size:auto;
+		}
+
+	</style>
 </head>
 <body>
 <!--Barra -->
@@ -15,11 +22,11 @@
 	</div>
 	<br><br><br>
 <!--Formulario-->
-	<form method="post" action="">	
-	<label for="usuario">Usuario</label>
-      <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" /><br><br>
-	  <label for="contrasena">Contraseña</label>
-      <input type="password" id="contra" name="contra" placeholder="Ingresa tu contraseña" /> 
+	<form method="post" action="" >	
+	<label for="usuario">Usuario:</label>
+      <input type="text" id="usuario" name="usuario"/><br><br>
+	  <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contra" name="contra" /> 
 	  <?php
 		include("base/procesar.php");
 	  ?>

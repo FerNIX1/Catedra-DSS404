@@ -3,12 +3,12 @@
 }
 /*Barra de inicio*/
 #barra a{
-	font-size: 20px;
+	font-size: 17px;
 	text-align: left;
 	width:100%;
 	height: 50px;
-  color:white;
-	background: #021d34;
+  color:#071931;
+	background: white;
 	padding: 7px 0 0 25px;
 }
 /*FinBarra de inicio*/
@@ -16,7 +16,7 @@
 body {
       background-image: linear-gradient(to bottom right,#284263, #bfbfbf);
       background-repeat: no-repeat;
-        background-size: cover;
+      background-size: cover;
       }
 
       h1 {
@@ -25,19 +25,19 @@ body {
       }
 
       form {
-        background-color: #ffffff;
+        background:rgba(248, 249, 250,0.7);
         border: 1px solid #e6e6e6;
         border-radius: 8px;
         width: 55%;
         margin: 0 auto;
-        padding: 45px;
+        padding: 45px;  
         box-shadow: 15px 25px 45px  #35444f;
       }
 
       label {
         display: block;
         font-size: 20px;
-        color: #222222;
+        color: black;
         margin-bottom: 10px;
       }
 
@@ -53,7 +53,7 @@ body {
 
       input[type="submit"] {
         background-color: #336699;
-        color: #ffffff;
+        color: black;
         font-size: 17px;
         padding: 10px;
         border: none;
@@ -82,6 +82,7 @@ body {
  .borde{
   margin: 0;
  }
+
  .borde .adentroborde{
   background: #bfbfbf;
   border: solid black 1px;

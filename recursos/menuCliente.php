@@ -16,38 +16,7 @@
 			margin: 0;
 			padding: 0;
 		}
-		#barra {
-			background-color: #2c3e50;
-			height: 40px;
-			padding: 10px;
-			text-align: center;
-		}
-		#barra a {
-			background-color: #2980b9;
-			border: none;
-			color: #fff;
-			padding: 8px 16px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			margin-right: 20px;
-			border-radius: 4px;
-		}
-		.diseñoMenu {
-			background-color: #fff;
-			border: 1px solid #ddd;
-			margin: 20px;
-			padding: 20px;
-			border-radius: 5px;
-			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-		}
-		.diseñoMenu p {
-			font-size: 20px;
-			margin: 0 0 10px 0;
-			font-weight: bold;
-			color: #333;
-		}
+		
 		hr {
 			border: 0;
 			height: 1px;
@@ -118,7 +87,7 @@
 	echo '<h1 style="font-weight:bold;">Menu Cliente</h1>';
 	echo '<hr>';
 	echo '<div class="mb-3" style="opacity:1;">';
-	echo '<button class="btn  btn-block mb-2">Crear Cuenta</button>';
+	echo '<a href="crearCuentaCliente.php"><button class="btn  btn-block mb-2">Crear Cuenta</button></a>';
 	echo '<button class="btn btn-block mb-2" style="cursor:default;">Su saldo es:</button>';
 	echo '<button class="btn btn-block mb-2" style="cursor:default;">$00.00 </button>';
 	echo '<button class="btn btn-block mb-2" onclick="location.href=\'cerrar.php\'">Salir</button>';
