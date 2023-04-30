@@ -45,8 +45,10 @@
 			</form>
 		</div>
 
-		<div class="col-md-6">
-			<div class="rightside">	
+		<div class="col-md-6">	
+        <div class="rightside">	
+                <?php
+                echo '
                 <h5>Solicitud de empleados</h5>
 				<table>
 					<tr>
@@ -59,6 +61,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div>'
+?>
 </body>
 </html>
