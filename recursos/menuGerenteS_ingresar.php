@@ -46,6 +46,7 @@
 		</div>
 
 		<div class="col-md-6">	
+			<br>
         <div class="rightside">	
                 <?php
                 echo '
