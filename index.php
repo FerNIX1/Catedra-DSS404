@@ -17,15 +17,7 @@
 </head>
 <body>
 
-<?php if (isset($errores)): ?>
-        <ul class="errores">
-            <?php 
-                foreach ($errores as $error) {
-                    echo '<li>' . $error . '</li>';
-                } 
-            ?> 
-        </ul>
-        <?php endif; ?>
+
 <!--Barra -->
 	<div id="barra">
 		<a class="waves-effect waves-light btn ">Banco de agricultura</a>

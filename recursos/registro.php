@@ -11,25 +11,63 @@
 
 </head>
 <body>
-	<?php include("registro1.php");?>
 <!--Barra -->
 	<div id="barra">
 		<a class="waves-effect waves-light btn ">Banco de agricultura</a>
 	</div>
 	<br><br>
-	<form action="registro1.php" method="post">
+	<form action="registro.php" method="post" novalidate>
+	<?php 
+		if(isset($_POST['usuario'])){
+			$dui = trim($_POST['dui']);
+		$usuario = trim($_POST['usuario']);
+		$correo = trim($_POST['correo']);
+		$fecNac =trim($_POST['fecnac']) ;
+		$contra =trim($_POST['contra']);
+		$contra_encriptada = password_hash($contra, PASSWORD_DEFAULT); //encripta la base de datos
+
+		$errores = array();
+		
+		if(trim($usuario == '')){
+			array_push($errores, 'El campo nombre es obligatorio');
+		}
+		if(trim($contra == '') || strlen($contra < 8)){
+			array_push($errores, 'El campo contraseña es obligatorio y debe contener mas de 8 caracteres');
+		}
+		if(trim($fecNac == '')){
+			array_push($errores, 'El campo fecha es obligatorio');
+		}
+		if(trim($correo == '') || ){
+			array_push($errores, 'El campo fecha es obligatorio');
+		}
+		
+		
+		if(count($errores) > 0){
+			echo "<div class='error'>";
+			for($i = 0; $i < count($errores); $i++)
+			{
+				echo "<li>".$errores[$i]."</li>";
+			}
+		}else{
+			echo "<div class='correct'> 
+							Datos correctos!";
+		}
+		echo "</div>";
+
+		}
+
+?>
+
 	  <h3><u>REGISTRAR</u></h3>
 
 	  <label for="usuario">Usuario:</label>
 	  <input type="text" id="usuario"  name="usuario" required><br>
 
 	  <label for="contra">Contraseña:</label>
-	  <input type="password" id="contra"  name="contra" required>
-	  <?php if(in_array("La contraseña debe tener al menos 8 caracteres.", $error)) { echo "<p class='error'>La contraseña debe tener al menos 8 caracteres.</p>"; } ?><br>
+	  <input type="password" id="contra"  name="contra" required><br>
 
 	  <label for="contra">Fecha de nacimiento:
 	  <input type="date" id="contra"  name="fecnac" > 
-	  <?php if(in_array("El formato de fecha de nacimiento es incorrecto. Debe tener el formato AAAA-MM-DD.", $error)) { echo "<p class='error'>El formato de fecha de nacimiento es incorrecto. Debe tener el formato DD-MM-AAAA.</p>"; } ?>
 	  </label><br>
 
 	  <label for="correos">Correo:
