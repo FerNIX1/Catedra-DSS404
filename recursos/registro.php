@@ -37,8 +37,8 @@
 		if(trim($fecNac == '')){
 			array_push($errores, 'El campo fecha es obligatorio');
 		}
-		if(trim($correo == '') || ){
-			array_push($errores, 'El campo fecha es obligatorio');
+		if(trim($correo == '') || preg_match('/^[0-9]{8}-[0-9]{1}$/', $dui)){
+			array_push($errores, '');
 		}
 		
 		
