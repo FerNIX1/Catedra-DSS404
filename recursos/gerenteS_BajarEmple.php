@@ -42,7 +42,7 @@
                     </tr>
                 </tbody>
                 </table>
-                <button type="button" class="btn btn-info"><a href="#" style="color:white;">SALIR</a></button>
+                <button type="button" class="btn btn-info"><a href="gerentesucursal.php" style="color:white;">SALIR</a></button>
             </div>
 	</div>
 </div>
