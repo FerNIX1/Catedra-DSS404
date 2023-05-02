@@ -87,7 +87,7 @@
 	echo '<hr>';
 	echo '<div class="mb-3" style="opacity:1;">';
 	echo '<a href="menuGerenteS_ingresar.php"><button class="btn  btn-block mb-2">Ingresar Nuevos Empleados</button></a>';
-	echo '<a href="#"><button class="btn  btn-block mb-2">Dar de Baja un empleado</button></a>';
+	echo '<a href="gerenteS_BajarEmple.php"><button class="btn  btn-block mb-2">Dar de Baja un empleado</button></a>';
 	echo '<a href="#"><button class="btn  btn-block mb-2">Salir</button></a>';
 	echo '</div>';
 	echo '</div>';
