@@ -19,7 +19,7 @@
 	<form action="registro.php" method="post" novalidate>
 	<?php 
 		if(isset($_POST['usuario'])){
-			$dui = trim($_POST['dui']);
+		$dui = trim($_POST['dui']);
 		$usuario = trim($_POST['usuario']);
 		$correo = trim($_POST['correo']);
 		$fecNac =trim($_POST['fecnac']) ;
@@ -28,17 +28,22 @@
 
 		$errores = array();
 		
-		if(trim($usuario == '')){
+		if(trim($usuario) == ''){
 			array_push($errores, 'El campo nombre es obligatorio');
 		}
-		if(trim($contra == '') || strlen($contra < 8)){
+		if(trim($contra) == '' || strlen($contra) < 8){
 			array_push($errores, 'El campo contraseña es obligatorio y debe contener mas de 8 caracteres');
 		}
-		if(trim($fecNac == '')){
+		if(trim($fecNac) == ''){
 			array_push($errores, 'El campo fecha es obligatorio');
 		}
-		if(trim($correo == '') || preg_match('/^[0-9]{8}-[0-9]{1}$/', $dui)){
-			array_push($errores, '');
+		if(trim($correo) == '' || !(filter_var($correo, FILTER_VALIDATE_EMAIL))){
+			array_push($errores, 'El correo es obligatorio y debe tener el formato correo');
+		}
+	
+		if(trim($dui) == '' || !(preg_match('/^[0-9]{8}-[0-9]{1}$/', $dui)))
+		{
+			array_push($errores, 'El DUI es obligatorio y debe tener el formato correo');
 		}
 		
 		

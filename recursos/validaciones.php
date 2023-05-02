@@ -11,19 +11,6 @@ $errores=[];
             $fecNac =trim($_POST['fecnac']) ;
             $contra =trim($_POST['contra']);
             $contra_encriptada = password_hash($contra, PASSWORD_DEFAULT); //encripta la base de datos
-
-
-
-
-
-            //Validacion de usuario
-                if(empty($_POST['usuario'])) {
-                     $error[] = "El campo de usuario es obligatorio.";
-                 }
-
-            if(strlen($_POST['contra']) < 8) {
-                $error[] = "La contraseña debe tener al menos 8 caracteres.";
-             }
            
             //Validacion de email y dui
             if (preg_match('/^[0-9]{8}-[0-9]{1}$/', $dui) || filter_var($correo, FILTER_VALIDATE_EMAIL)) {
@@ -46,22 +33,7 @@ $errores=[];
         } 
 }else{
 
-//Funciones para validar de la 
-    function obligatorio(string $texto) : bool{
-        return !(trim($texto) == '');
-    }
 
-    function validar_email(strin $texto) : bool{
-        return (filter_var($texto, FILTER_VALIDATE_EMAIL == false)? false : true);
-    }
-
-    if(!obligatorio($usuario)){
-        $errores[] = 'Tu nombre es obligatorio agregarlo.';
-    }
-
-    if(!validar_email($email)){
-        $errores[] = 'Tu correo electronico es obligatorio agregarlo.';
-    }
 
     
 
