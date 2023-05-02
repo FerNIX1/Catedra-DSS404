@@ -9,13 +9,13 @@
 	<link rel="stylesheet" type="text/css" href="../css/cajero.css">
 </head>
 <body>
-	<?php
+<?php
 	session_start();
 	if(!isset($_SESSION['tipocuenta'])){
-		header('Location:../index.php');
+		header('Location: Error404.php');
 	}else{
 		if($_SESSION['tipocuenta']!=4){
-			header('Location:../index.php');
+			header('Location: Error404.php');
 		}
 	}
 	?>

@@ -35,12 +35,18 @@ function validar(){
                         header('Location: recursos/menuCliente.php');
                         break;
                          case 2:
+                        $_SESSION['tipocuenta']=$datos_usuario['ID_cuenta'];
+                        $tipo_cuenta=$_SESSION['tipocuenta'];
                         header('Location: recursos/gerentesucursal.php');
                         break;
                         case 3:
+                        $_SESSION['tipocuenta']=$datos_usuario['ID_cuenta'];
+                        $tipo_cuenta=$_SESSION['tipocuenta'];
                             header('Location: recursos/admin.php');
                             break;
                         case 4:
+                            $_SESSION['tipocuenta']=$datos_usuario['ID_cuenta'];
+                            $tipo_cuenta=$_SESSION['tipocuenta'];
                             header('Location: recursos/cajero.php');
                             break;
                  }

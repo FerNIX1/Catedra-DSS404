@@ -8,7 +8,17 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
-<body>   
+<body>
+<?php
+	session_start();
+	if(!isset($_SESSION['tipocuenta'])){
+		header('Location: Error404.php');
+	}else{
+		if($_SESSION['tipocuenta']!=3){
+			header('Location: Error404.php');
+		}
+	}
+	?>    
     <form method="post">
         <h3><i>Administrador</i></h3>
         <h6>Registro de planilla</h6>

@@ -63,13 +63,13 @@
 	</style>
 </head>
 <body>
-	<?php
+<?php
 	session_start();
 	if(!isset($_SESSION['tipocuenta'])){
-		header('Location:../index.php');
+		header('Location: Error404.php');
 	}else{
 		if($_SESSION['tipocuenta']!=2){
-			header('Location:../index.php');
+			header('Location: Error404.php');
 		}
 	}
 	?>
