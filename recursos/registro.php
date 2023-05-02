@@ -16,7 +16,7 @@
 		<a class="waves-effect waves-light btn ">Banco de agricultura</a>
 	</div>
 	<br><br>
-	<form action="registro.php" method="post" novalidate>
+	<form action="validaciones.php" method="post" novalidate>
 	
 	  <h3><u>REGISTRAR</u></h3>
 
@@ -41,6 +41,8 @@
 	  <br>
 	  <br>
 	  <?php 
+	  	include("conexion.php");
+
 		if(isset($_POST['usuario'])){
 		$dui = trim($_POST['dui']);
 		$usuario = trim($_POST['usuario']);
@@ -78,7 +80,19 @@
 			}
 		}else{
 			echo "<div class='correct'> 
-							Datos correctos!";
+					Datos correctos!";
+					$query ="INSERT INTO `usuario`(`DUI_Usuario`, `Nombre_Usuario`, `Correo_Electronico`, `FechaNacimiento` , `Pass` , `ID_cuenta`) VALUES ('$dui','$usuario','$correo','$fecNac','$contra_encriptada',1)";
+
+                $finconsulta = mysqli_query($conexion,$query);
+
+                if ($finconsulta) {
+                    echo "<p>Conexion exitosa</p>";
+
+                    echo "<p>Dui".$dui."<br>Ususario ".$usuario."<br>Correo".$correo."<br>Fecha de Nacimeinto".$fecNac."<br>Contraseña".$contra."</p>";
+                    header('Location: ../index.php');
+                    exit;
+				}
+					
 		}
 		echo "</div>";
 
